@@ -17,8 +17,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        for (int i = 0; i < INPUT.length; i++) {
-            System.out.println(INPUT[i]);
-        }
+        Parser parser = new Parser("UNIX");
+        parser.parse(INPUT);
     }
 }
