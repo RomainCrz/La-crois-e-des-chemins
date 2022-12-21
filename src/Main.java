@@ -18,6 +18,7 @@ public class Main {
     public static void main(String[] args)
     {
         Parser parser = new Parser("UNIX");
-        parser.parse(INPUT);
+        Dossier root = parser.parse(INPUT);
+
     }
 }

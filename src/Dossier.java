@@ -38,4 +38,12 @@ public class Dossier
         }
         return null;
     }
+
+    public ArrayList<Dossier> getDossiers() {
+        return dossiers;
+    }
+
+    public ArrayList<Fichier> getFichiers() {
+        return fichiers;
+    }
 }

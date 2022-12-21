@@ -35,7 +35,7 @@ public class Parser {
         parent.addFichier(new Fichier(pathArray[pathPosition], parent));
     }
 
-    public void parse (String[] input){
+    public Dossier parse (String[] input){
         for (int i = 0; i < input.length; i++) {
             String path = input[i];
             String[] pathArray = path.split(String.valueOf(parsingChar));
@@ -47,6 +47,8 @@ public class Parser {
                 }
             }
         }
+
+        return root;
     }
 
 
